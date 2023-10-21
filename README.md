@@ -1,4 +1,4 @@
-# PIDtuning
+# PID tuning
 tune a PI or PID loop using the Ziegler-Nichols tuning method
 
 set Kp, Ki, and Kd to zero
