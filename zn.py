@@ -1,15 +1,5 @@
 def ziegler_nichols_tuning(Ku, Tu):
-    """
-    Calculate PID and PI coefficients using Ziegler-Nichols method.
 
-    Parameters:
-    - Ku: Ultimate gain where the system starts oscillating
-    - Tu: Oscillation period when the system is under ultimate gain
-
-    Returns:
-    - pid_params: A tuple containing the PID coefficients (Kp, Ki, Kd)
-    - pi_params: A tuple containing the PI coefficients (Kp, Ki)
-    """
     # PID coefficients
     Kp_pid = 0.6 * Ku
     Ki_pid = 2 * Kp_pid / Tu
@@ -23,7 +13,6 @@ def ziegler_nichols_tuning(Ku, Tu):
     pi_params = (Kp_pi, Ki_pi)
     
     return pid_params, pi_params
-
 
 # Get the ultimate gain (Ku) and ultimate period (Tu) from the user
 try:
