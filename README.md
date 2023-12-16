@@ -3,7 +3,7 @@ tune a PI or PID loop using the Ziegler-Nichols tuning method
 
 set Kp, Ki, and Kd to zero
 
-slowly increase Kp a small amount, say 0.1 at a time, and between adjustments watch the response to see if the system begins to oscillate with constant amplitude
+slowly increase Kp a small amount, say 0.1 at a time, and between adjustments watch the response to see if the system begins to oscillate with constant amplitude. 
 the oscillation should be consistent and perpetual, without tapering off or growing wildly out of control
 
 once constant oscillation is observed, record the time between oscillations (peak to peak)
